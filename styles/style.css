@@ -64,20 +64,6 @@ header ul {
     font-size: 20px;
   }
 }
-header ul li a {
-  color: #6c6c6c;
-  transition: 0.3s;
-  text-decoration: none;
-}
-header ul li a.active {
-  color: #478ac9;
-}
-header ul li a.active:hover {
-  color: #478ac9;
-}
-header ul li a:hover {
-  color: #db545a;
-}
 @media (max-width: 992px) {
   header ul {
     display: flex;
@@ -91,6 +77,7 @@ header ul li a:hover {
     justify-content: start;
     align-items: center;
     padding-top: 90px;
+    padding-right: 30px;
     transition: 0.3s;
     z-index: 10;
   }
@@ -117,6 +104,20 @@ header ul li a:hover {
   header ul .close-icon {
     display: block;
   }
+}
+header ul li a {
+  color: #6c6c6c;
+  transition: 0.3s;
+  text-decoration: none;
+}
+header ul li a.active {
+  color: #478ac9;
+}
+header ul li a.active:hover {
+  color: #478ac9;
+}
+header ul li a:hover {
+  color: #db545a;
 }
 header .nav-icon {
   font-size: 20px;
@@ -279,6 +280,7 @@ header .close-icon:hover {
   flex-wrap: wrap;
   gap: 8px;
   margin: 20px;
+  overflow: hidden;
 }
 .gallery div {
   width: 24%;
